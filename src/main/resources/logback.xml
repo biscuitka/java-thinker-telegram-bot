@@ -1,6 +1,6 @@
 <configuration>
 
-    <property name="HOME_LOG" value="/var/log/biscuitka.com/fortune-cookie-bot/app.log"/>
+    <property name="HOME_LOG" value="/var/log/biscuitka.com/thinkerBot/app.log"/>
 
     <appender name="FILE-ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${HOME_LOG}</file>
@@ -20,7 +20,7 @@
         </encoder>
     </appender>
 
-    <logger name="com.biscuitka.fortuneCookieBot" level="debug" additivity="false">
+    <logger name="com.biscuitka.thinkerBot" level="debug" additivity="false">
         <appender-ref ref="FILE-ROLLING"/>
     </logger>
 
